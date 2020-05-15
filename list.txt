@@ -1,0 +1,21 @@
+Categories:
+• Men
+• Women
+
+Products:
+• Tshirts
+- Half sleeves
+- Full sleeves
+• Sweatshirts
+• Mugs
+• Diary
+
+Customer profile
+• My Account
+- Address
+- Contact no.
+• My Orders
+- Orders punched
+- Track order
+• My wishlist
+Log out

@@ -1,0 +1,24 @@
+.wrapper-grid3{
+    width: 1440px;
+    background: rgb(7,9,34);
+    display: grid;
+    grid-template-columns: 288px 1152px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  .deal{
+    font-size: 3rem;
+    margin: 1.5rem;
+    display: inline;
+    text-align: center;
+    color: white;
+  }
+  .sub-grid{
+    display: grid;
+    width: 1152px;
+    grid-template-columns: 288px 288px 288px 288px;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+  }

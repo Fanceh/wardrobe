@@ -1,0 +1,41 @@
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    max-width: 1440px;
+    align-items: center;
+    justify-items: center;
+  }
+  .layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-white;
+    max-width: 1440px;
+    padding: 2rem 5.5rem; 
+  }
+  .layout:hover b{
+    width: 100%;
+  }
+  b{
+    margin-top: 1.2rem;
+    width: 0%;
+    background: $color-white;
+    height: 2px;
+    transition: all .5s; 
+  }
+  .under-text{  
+    margin: 1.5rem auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    cursor: default;
+  }
+  .layout-1{
+    background: rgb(255, 76, 76);
+  }
+  .layout-2{
+    background: rgb(183, 0, 255)
+  }
+  .layout-3{
+    background: rgb(0, 153, 255);
+  }
