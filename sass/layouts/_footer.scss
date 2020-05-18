@@ -1,32 +1,31 @@
 .footer{
-    border: 1px solid #bbe;
-    box-shadow: 0 0 42px rgba(10,10,10,.5);
-    width: 1440px;
-    padding: 2rem 1rem;
-  }
+  padding: 2rem 0rem;
+  border: 1px solid #bbe;
+  box-shadow: 0 0 42px rgba(10,10,10,.5);
+}
+.Categories,.Products,.search-box{
+  margin: 1rem 2rem;
   ul{
     padding: 0px;
     list-style: none;
+    }
   }
-  .wrapper-footer{
-    display: grid;
-    grid-template-columns: 480px 480px 480px;
-    padding-left: 1rem;
-  }
-  .footer-head{
-      margin-bottom: 2rem;
-  }
-  .search-box{
-    position: relative;
-  }
-  .email-box{
-    width: 10rem;
-    height: 2.05rem;
-  }
-  .subscribe{
-    position: absolute;
-    top: 10;
-    padding: 0.4rem 1rem;
-    color: white;
-    background: black;
-  }
+.wrapper-footer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, auto));
+}
+.search-box{
+  position: relative;
+}
+.email-box{
+  width: 10rem;
+  height: 2.25rem;
+}
+.subscribe{
+  position: absolute;
+  top: 10;
+  padding: .5rem 1.5rem;
+  color: white;
+  background: black;
+}

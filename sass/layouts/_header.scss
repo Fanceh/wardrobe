@@ -11,7 +11,7 @@
     }
 
     &__title-hoodie{
-        height: 25rem;
+        max-height: 25rem;
     }
 
     &__text-box{
@@ -31,7 +31,7 @@
     }
     
     &__text-2{
-        margin-top: -1.6rem;
+        //margin-top: -1.6rem;
         display: inline-block;
         font-size: 40px;
         color: $color-white;
@@ -55,6 +55,12 @@
         color: $color-white;
         border-radius: 1rem;
         padding: 0.5rem 2.5rem;        
+        transition: all .6s;
+
+        &:hover{
+            background-color: $color-white;
+            color: rgb(255,140,21);
+        }
     }
 }
 

@@ -1,20 +1,24 @@
 // Navigation Variables
-$content-width: 1440px;
+$content-width: 100%;
 $breakpoint: 799px;
-$nav-height: 70px;
+$nav-height: 50px;
 $nav-background: rgb(29, 29, 29);
 $nav-font-color: #FFF;
 $link-hover-color: #2581DC;
 
 // Outer navigation wrapper
 .navigation {
+  max-width: $content-width;
+  position: fixed;
+  left: 3rem;
+  right: 3rem;
+  z-index: 1000;
   height: $nav-height;
   background: $nav-background;
 }
 
 // Logo and branding
 .brand {
-  position: absolute;
   padding-left: 20px;
   float: left;
   line-height: $nav-height;
@@ -25,12 +29,6 @@ $link-hover-color: #2581DC;
     color: $nav-font-color;
     text-decoration: none;
   }
-}
-
-// Container with no padding for navbar
-.nav-container {
-  max-width: $content-width;
-  margin: 0 auto;
 }
 
 // Navigation 

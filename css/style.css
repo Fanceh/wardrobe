@@ -23,9 +23,34 @@
   font-family: blackjack;
   src: url(../fonts/blackjack.otf); }
 
+html {
+  scroll-behavior: smooth; }
+  html li {
+    list-style: none; }
+  @media (max-width: 600px) {
+    html body {
+      padding: 0rem 1rem 0rem 1rem;
+      background: no-repeat; }
+    html .header {
+      height: 105vh; }
+      html .header__header-product {
+        top: 5rem;
+        left: 2rem;
+        right: 2rem; }
+      html .header__text-box {
+        margin-top: 1rem;
+        padding: 0 2rem;
+        top: 30rem;
+        left: 0rem;
+        right: 0rem; }
+      html .header__text-1 {
+        line-height: 3rem; }
+    html .navigation {
+      left: 1rem;
+      right: 1rem; } }
+
 body {
-  overflow: hidden;
-  padding: 3rem;
+  padding: 0rem 3rem 0rem 3rem;
   height: 100vh;
   background: linear-gradient(225deg, white 0%, white 51%, black 51%, black);
   background-size: cover;
@@ -34,9 +59,7 @@ body {
 .main-primary {
   background-color: white;
   box-shadow: 0 0 2rem black;
-  overflow-x: hidden;
-  height: 39rem;
-  width: auto; }
+  overflow-x: hidden; }
 
 ::-webkit-scrollbar {
   width: 0px; }
@@ -97,8 +120,9 @@ body {
 
 .wrapper-grid {
   display: grid;
-  grid-template-columns: 480px 480px 480px;
-  max-width: 1440px;
+  grid-template-columns: repeat(auto-fit, minmax(470px, auto));
+  max-height: auto;
+  max-width: 100%;
   align-items: center;
   justify-items: center; }
 
@@ -107,7 +131,6 @@ body {
   flex-direction: column;
   align-items: center;
   color: white;
-  max-width: 1440px;
   padding: 2rem 5.5rem; }
 
 .layout:hover b {
@@ -121,6 +144,7 @@ b {
   transition: all .5s; }
 
 .under-text {
+  width: 100%;
   margin: 1.5rem auto;
   text-transform: uppercase;
   font-size: 15px;
@@ -137,9 +161,9 @@ b {
   background: #0099ff; }
 
 .wrapper-product {
-  width: 1440px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 240px 240px 240px 240px 240px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 1.5rem;
   align-items: center;
   justify-content: center; }
@@ -343,34 +367,32 @@ b {
   width: 263px !important; }
 
 .footer {
+  padding: 2rem 0rem;
   border: 1px solid #bbe;
-  box-shadow: 0 0 42px rgba(10, 10, 10, 0.5);
-  width: 1440px;
-  padding: 2rem 1rem; }
+  box-shadow: 0 0 42px rgba(10, 10, 10, 0.5); }
 
-ul {
-  padding: 0px;
-  list-style: none; }
+.Categories, .Products, .search-box {
+  margin: 1rem 2rem; }
+  .Categories ul, .Products ul, .search-box ul {
+    padding: 0px;
+    list-style: none; }
 
 .wrapper-footer {
+  width: 100%;
   display: grid;
-  grid-template-columns: 480px 480px 480px;
-  padding-left: 1rem; }
-
-.footer-head {
-  margin-bottom: 2rem; }
+  grid-template-columns: repeat(auto-fit, minmax(470px, auto)); }
 
 .search-box {
   position: relative; }
 
 .email-box {
   width: 10rem;
-  height: 2.05rem; }
+  height: 2.25rem; }
 
 .subscribe {
   position: absolute;
   top: 10;
-  padding: 0.4rem 1rem;
+  padding: .5rem 1.5rem;
   color: white;
   background: black; }
 
@@ -384,7 +406,7 @@ ul {
     top: 3rem;
     right: 5rem; }
   .header__title-hoodie {
-    height: 25rem; }
+    max-height: 25rem; }
   .header__text-box {
     text-align: left;
     cursor: default;
@@ -398,7 +420,6 @@ ul {
     letter-spacing: 1px;
     line-height: 6rem; }
   .header__text-2 {
-    margin-top: -1.6rem;
     display: inline-block;
     font-size: 40px;
     color: white;
@@ -416,7 +437,11 @@ ul {
     border: 1.1px solid white;
     color: white;
     border-radius: 1rem;
-    padding: 0.5rem 2.5rem; }
+    padding: 0.5rem 2.5rem;
+    transition: all .6s; }
+    .header__title-btn1:hover, .header__title-btn2:hover {
+      background-color: white;
+      color: #ff8c15; }
 
 .title-products {
   margin: 0 30px;
@@ -437,24 +462,24 @@ ul {
     border: 2px solid rgba(0, 0, 0, 0.2); }
 
 .navigation {
-  height: 70px;
+  max-width: 100%;
+  position: fixed;
+  left: 3rem;
+  right: 3rem;
+  z-index: 1000;
+  height: 50px;
   background: #1d1d1d; }
 
 .brand {
-  position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: 70px;
+  line-height: 50px;
   text-transform: uppercase;
   font-size: 1.4em; }
   .brand a,
   .brand a:visited {
     color: #FFF;
     text-decoration: none; }
-
-.nav-container {
-  max-width: 1440px;
-  margin: 0 auto; }
 
 nav {
   float: right; }
@@ -469,7 +494,7 @@ nav {
       nav ul li a:visited {
         display: block;
         padding: 0 20px;
-        line-height: 70px;
+        line-height: 50px;
         background: #1d1d1d;
         color: #FFF;
         text-decoration: none;
@@ -501,15 +526,15 @@ nav {
   top: 0;
   right: 0;
   background: #1d1d1d;
-  height: 70px;
-  width: 70px; }
+  height: 50px;
+  width: 50px; }
 
 @media only screen and (max-width: 798px) {
   .nav-mobile {
     display: block; }
   nav {
     width: 100%;
-    padding: 70px 0 15px; }
+    padding: 50px 0 15px; }
     nav ul {
       display: none; }
       nav ul li {
@@ -558,6 +583,6 @@ nav {
       transform: rotate(-45deg); }
 
 article {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px; }
