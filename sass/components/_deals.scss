@@ -1,8 +1,8 @@
 .wrapper-grid3{
-    width: 1440px;
+    width: 100%;
     background: rgb(7,9,34);
     display: grid;
-    grid-template-columns: 288px 1152px;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
     align-items: center;
     justify-content: center;
     padding: 0 2.5rem 0 2.5rem;
@@ -17,8 +17,9 @@
   .sub-grid{
     display: grid;
     width: 1152px;
-    grid-template-columns: 288px 288px 288px 288px;
-    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(288px, auto));
+    grid-gap: 1rem;
+    padding: 1rem 1rem;
     align-items: center;
     justify-content: center;
   }

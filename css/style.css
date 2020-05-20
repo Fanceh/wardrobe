@@ -21,25 +21,27 @@
 
 @font-face {
   font-family: blackjack;
-  src: url(../fonts/blackjack.otf); }
+  src: url(../fonts/blackjack.otf);
+  font-size: 100%; }
 
 html {
   scroll-behavior: smooth; }
   html li {
     list-style: none; }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     html body {
       background: no-repeat; }
     html .header {
-      height: 105vh; }
+      height: 94vh; }
       html .header__header-product {
-        top: 5rem;
-        left: 2rem;
-        right: 2rem; }
+        top: 2rem;
+        right: 0rem; }
+      html .header__title-hoodie {
+        max-height: 22rem; }
       html .header__text-box {
         margin-top: 1rem;
-        padding: 0 2rem;
-        top: 30rem;
+        padding: 0 1rem;
+        top: 24rem;
         left: 0rem;
         right: 0rem; }
       html .header__text-1 {
@@ -47,8 +49,8 @@ html {
     html .navigation {
       left: 1rem;
       right: 1rem; }
-    html .layout {
-      padding: 2rem 19.5rem; } }
+    html .wrapper-grid {
+      grid-template-columns: repeat(auto-fit, minmax(360px, auto)); } }
 
 body {
   padding: 0% 1.5%;
@@ -96,10 +98,10 @@ body {
   margin-top: 10rem !important; }
 
 .wrapper-grid3 {
-  width: 1440px;
+  width: 100%;
   background: #070922;
   display: grid;
-  grid-template-columns: 288px 1152px;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
   align-items: center;
   justify-content: center;
   padding: 0 2.5rem 0 2.5rem; }
@@ -114,8 +116,9 @@ body {
 .sub-grid {
   display: grid;
   width: 1152px;
-  grid-template-columns: 288px 288px 288px 288px;
-  padding: 1rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(288px, auto));
+  grid-gap: 1rem;
+  padding: 1rem 1rem;
   align-items: center;
   justify-content: center; }
 
@@ -124,8 +127,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(470px, auto));
   max-height: auto;
   max-width: 100%;
-  align-items: center;
-  justify-items: center; }
+  align-items: center; }
 
 .layout {
   display: flex;
@@ -403,6 +405,7 @@ b {
   height: 65vh;
   position: relative; }
   .header__header-product {
+    height: 100%;
     position: absolute;
     top: 3rem;
     right: 5rem; }

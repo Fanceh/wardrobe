@@ -10,6 +10,7 @@
 @font-face {
     font-family: $title-font;
     src: url(../fonts/blackjack.otf);
+    font-size: 100%;
 }
 
 html{
@@ -17,25 +18,28 @@ html{
     li{
         list-style: none;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (min-device-width: 320px) and (max-device-width : 480px) {
 
         body{
             background: no-repeat;
         }
 
         .header{
-            height: 105vh;
+            height: 94vh;
 
             &__header-product{
-                top: 5rem;
-                left: 2rem;
-                right: 2rem;
+                top: 2rem;
+                right: 0rem;
+            }
+
+            &__title-hoodie{
+                max-height: 22rem;
             }
 
             &__text-box{
                 margin-top: 1rem;
-                padding: 0 2rem;
-                top: 30rem;
+                padding: 0 1rem;
+                top: 24rem;
                 left: 0rem;
                 right: 0rem;
             }
@@ -50,8 +54,8 @@ html{
             right: 1rem;
         }
 
-        .layout{
-            padding: 2rem 19.5rem;
+        .wrapper-grid{
+            grid-template-columns: repeat(auto-fit, minmax(360px, auto));
         }
     }
 
