@@ -1,17 +1,14 @@
 // Navigation Variables
 $content-width: 100%;
 $breakpoint: 799px;
-$nav-height: 50px;
-$nav-background: rgb(29, 29, 29);
-$nav-font-color: #FFF;
+$nav-height: 70px;
+$nav-background: #FFF;
+$nav-font-color: rgb(29, 29, 29);
 $link-hover-color: #2581DC;
 
 // Outer navigation wrapper
 .navigation {
   max-width: $content-width;
-  position: fixed;
-  left: 3rem;
-  right: 3rem;
   z-index: 1000;
   height: $nav-height;
   background: $nav-background;

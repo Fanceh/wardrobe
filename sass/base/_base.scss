@@ -17,10 +17,9 @@ html{
     li{
         list-style: none;
     }
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
 
         body{
-            padding: 0rem 1rem 0rem 1rem;
             background: no-repeat;
         }
 
@@ -50,16 +49,18 @@ html{
             left: 1rem;
             right: 1rem;
         }
+
+        .layout{
+            padding: 2rem 19.5rem;
+        }
     }
 
-    @media (max-width: 1800px) {
-        
-    }
+   
 }
 
 body {
     //overflow: hidden;
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0% 1.5%;
     height: 100vh;
     background: linear-gradient(225deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgb(0, 0, 0) 51%, rgb(0, 0, 0));
     background-size: cover;
