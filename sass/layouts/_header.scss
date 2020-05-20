@@ -42,7 +42,7 @@
     &__title-btns{
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(481.3px, auto));
         grid-gap: 1rem;
     }
 

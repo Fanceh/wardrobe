@@ -22,30 +22,35 @@ html{
 
         body{
             background: no-repeat;
+            font-size: 350%;
         }
 
         .header{
-            height: 94vh;
+            height: 53vh;
 
             &__header-product{
                 top: 2rem;
-                right: 0rem;
+                padding: 0 4rem;
             }
 
             &__title-hoodie{
-                max-height: 22rem;
+                max-height: 100%;
             }
 
             &__text-box{
                 margin-top: 1rem;
                 padding: 0 1rem;
-                top: 24rem;
+                top: 43rem;
                 left: 0rem;
                 right: 0rem;
             }
 
             &__text-1{
                 line-height: 3rem;
+            }
+
+            &__title-btns{
+                margin: 0 2rem;
             }
         }
 
@@ -63,7 +68,7 @@ html{
 }
 
 body {
-    //overflow: hidden;
+    font-size: 100%;
     padding: 0% 1.5%;
     height: 100vh;
     background: linear-gradient(225deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 51%, rgb(0, 0, 0) 51%, rgb(0, 0, 0));

@@ -30,22 +30,25 @@ html {
     list-style: none; }
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     html body {
-      background: no-repeat; }
+      background: no-repeat;
+      font-size: 350%; }
     html .header {
-      height: 94vh; }
+      height: 53vh; }
       html .header__header-product {
         top: 2rem;
-        right: 0rem; }
+        padding: 0 4rem; }
       html .header__title-hoodie {
-        max-height: 22rem; }
+        max-height: 100%; }
       html .header__text-box {
         margin-top: 1rem;
         padding: 0 1rem;
-        top: 24rem;
+        top: 43rem;
         left: 0rem;
         right: 0rem; }
       html .header__text-1 {
         line-height: 3rem; }
+      html .header__title-btns {
+        margin: 0 2rem; }
     html .navigation {
       left: 1rem;
       right: 1rem; }
@@ -53,6 +56,7 @@ html {
       grid-template-columns: repeat(auto-fit, minmax(360px, auto)); } }
 
 body {
+  font-size: 100%;
   padding: 0% 1.5%;
   height: 100vh;
   background: linear-gradient(225deg, white 0%, white 51%, black 51%, black);
@@ -431,7 +435,7 @@ b {
   .header__title-btns {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(481.3px, auto));
     grid-gap: 1rem; }
   .header__title-btn1, .header__title-btn2 {
     text-align: center;
@@ -530,7 +534,7 @@ nav {
   height: 70px;
   width: 70px; }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (min-width: 360px) {
   .nav-mobile {
     display: block; }
   nav {
