@@ -31,7 +31,7 @@ p{
     color: #fff;
 }
 
-button{
+.btns{
     outline: 0;
     border: .1rem solid #fafafa;
     background: none;
@@ -41,7 +41,7 @@ button{
     transition: background .6s;
 }
 
-button:hover{
+.btns:hover{
     background: linear-gradient(135deg , rgb(0, 107, 179) 0% ,rgb(162, 0, 255) 100%);
 }
 
@@ -124,29 +124,28 @@ h2{
 }
 
 .nav-search-text-box{
-    display: none;
-    z-index: 5000;
-    width: 100%;
     background: #000;
     font-size: 1.5rem;
     border: transparent;
-    background: #FFF;
     padding: 1rem;
     transform: translateY(-.2rem);
-    z-index: 3000;
+    color: #FFF;
 }
-
+.nav-search-text-box::placeholder{
+    color: #FFF;
+}
 .nav-search-text-box:focus{
     outline: none;
 }
 
 .nav-search .search-icon{
     font-size: 2rem;
-    color: #FFF;
-    background-color: rgb(42, 177, 255);
+    color: #000;
+    background-color: #FFF;
     border-radius: 100%;
     padding: .5rem;
     cursor: pointer;
+    transform: rotate(90deg);
 }
 
 .cart-icon{
