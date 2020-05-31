@@ -124,16 +124,20 @@ h2{
 }
 
 .nav-search-text-box{
-    display: none;
-    z-index: 5000;
+    margin: 0 1rem;
     width: 100%;
-    background: #000;
+    background: rgb(255, 255, 255);
     font-size: 1.5rem;
     border: transparent;
-    background: #FFF;
+    border-radius: 1rem;
     padding: 1rem;
     transform: translateY(-.2rem);
     z-index: 3000;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
 }
 
 .nav-search-text-box:focus{
@@ -223,7 +227,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1500;
+    z-index: 4000;
     transition: all .5s ease-in-out;
 }
 
