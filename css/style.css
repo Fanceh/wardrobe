@@ -31,7 +31,7 @@ p{
     color: #fff;
 }
 
-.button{
+.button {
     outline: 0;
     border: .1rem solid #fafafa;
     background: none;
@@ -41,7 +41,7 @@ p{
     transition: background .6s;
 }
 
-.button:hover{
+.button :hover{
     background: linear-gradient(135deg , rgb(0, 107, 179) 0% ,rgb(162, 0, 255) 100%);
 }
 
