@@ -124,28 +124,29 @@ h2{
 }
 
 .nav-search-text-box{
+    display: none;
+    z-index: 5000;
+    width: 100%;
     background: #000;
     font-size: 1.5rem;
     border: transparent;
+    background: #FFF;
     padding: 1rem;
     transform: translateY(-.2rem);
-    color: #FFF;
+    z-index: 3000;
 }
-.nav-search-text-box::placeholder{
-    color: #FFF;
-}
+
 .nav-search-text-box:focus{
     outline: none;
 }
 
 .nav-search .search-icon{
     font-size: 2rem;
-    color: #000;
-    background-color: #FFF;
+    color: #FFF;
+    background-color: rgb(42, 177, 255);
     border-radius: 100%;
     padding: .5rem;
     cursor: pointer;
-    transform: rotate(90deg);
 }
 
 .cart-icon{
