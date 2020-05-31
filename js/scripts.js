@@ -12,14 +12,14 @@ selectElement('.close').addEventListener('click', () => {
 });
 
 //Search-Button on Click
-selectElement('.search-icon').addEventListener('click', () =>{
-  if(selectElement('.nav-search-text-box').style.display==="none"){
-    selectElement('.nav-search-text-box').style.display="block";
-  }
-  else{
-    selectElement('.nav-search-text-box').style.display="none";
-  }
-});
+// selectElement('.search-icon').addEventListener('click', () =>{
+//   if(selectElement('.nav-search-text-box').style.display==="none"){
+//     selectElement('.nav-search-text-box').style.display="block";
+//   }
+//   else{
+//     selectElement('.nav-search-text-box').style.display="none";
+//   }
+// });
 
 //featured-items buttons
 selectElement('.feature-men').addEventListener('click', () =>{
