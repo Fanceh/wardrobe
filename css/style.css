@@ -286,8 +286,9 @@ h2{
 
 .shape{
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     outline: .1rem solid #fafafa;
+    outline-offset: -.3rem;
     display: grid;
     grid-gap: 1rem;
     color: #fafafa;
