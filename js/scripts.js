@@ -11,13 +11,6 @@ selectElement('.close').addEventListener('click', () => {
   selectElement('.nav-list').classList.remove('active');
 });
 
-//Side nav-bar menu update
-jQuery(document).ready(function(){
-  jQuery(".sub-side-myacc-menu").click(function(){
-    jQuery(".nav-link").slideToggle();
-  });
-});
-
 //Search-Button on Click
 // selectElement('.search-icon').addEventListener('click', () =>{
 //   if(selectElement('.nav-search-text-box').style.display==="none"){
