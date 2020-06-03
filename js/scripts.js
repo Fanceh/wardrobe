@@ -11,6 +11,11 @@ selectElement('.close').addEventListener('click', () => {
   selectElement('.nav-list').classList.remove('active');
 });
 
+//Side nav-bar menu update
+$(".nav-link").click(function(){
+  $(".sub-side-myacc-menu").slideToggle();
+});
+
 //Search-Button on Click
 // selectElement('.search-icon').addEventListener('click', () =>{
 //   if(selectElement('.nav-search-text-box').style.display==="none"){
@@ -67,3 +72,4 @@ selectElement('.circle-btn-3').addEventListener('click', () =>{
   selectElement('.banner-img2').style.display="none";
   selectElement('.banner-img3').style.display="block";
 });
+

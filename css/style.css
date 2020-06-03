@@ -49,6 +49,7 @@ img{
     width: 100%;
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 section{
@@ -285,9 +286,8 @@ h2{
 
 .shape{
     width: 100%;
-    padding: 2rem;
+    padding: 0.8rem;
     outline: .1rem solid #fafafa;
-    outline-offset: -0.8rem;
     display: grid;
     grid-gap: 1rem;
     color: #fafafa;
@@ -534,7 +534,7 @@ h2{
 /*Slider*/
 
 /*MEDIA QUERIES*/
-@media screen and (min-width: 350px){
+@media screen and (min-width: 320px){
     .header{
         height: 45vh;
     }
