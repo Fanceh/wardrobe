@@ -12,8 +12,10 @@ selectElement('.close').addEventListener('click', () => {
 });
 
 //Side nav-bar menu update
-$(".nav-link").click(function(){
-  $(".sub-side-myacc-menu").slideToggle();
+jQuery(document).ready(function(){
+  jQuery(".sub-side-myacc-menu").click(function(){
+    jQuery(".nav-link").slideToggle();
+  });
 });
 
 //Search-Button on Click

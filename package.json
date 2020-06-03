@@ -16,7 +16,5 @@
     "url": "https://github.com/Fanceh/wardrobe/issues"
   },
   "homepage": "https://github.com/Fanceh/wardrobe#readme",
-  "dependencies": {
-    "jquery": "^3.5.1"
-  }
+  "dependencies": {}
 }
