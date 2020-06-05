@@ -116,10 +116,11 @@ h2{
 }
 
 .nav-fix-gap{
-    margin: 0 0.6rem;
+    margin: 0 .6rem;
 }
 
 .nav-brand{
+    display: block;
     width: 4rem;
     filter: invert(1);
 }
@@ -237,7 +238,8 @@ h2{
 }
 
 .nav-items{
-    margin: 1.5rem 0;
+    padding: .5rem 2.5rem;
+    width: 100%;
 }
 
 .nav-link{
@@ -294,12 +296,19 @@ h2{
     color: #fafafa;
 }
 
+.shape p{
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
 .box img{
     display: block;
     margin: 0 auto;
     width: 17rem;
     height: 17rem;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .rate-price,.btns{
@@ -328,7 +337,7 @@ h2{
     font-family: fontAwesome;
     position: relative;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FFF;
   }
   .rating label:after{
@@ -337,7 +346,7 @@ h2{
     position: absolute;
     top: 0;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #1f9cff;
     opacity: 0;
     transition: all .5s;
@@ -556,6 +565,15 @@ h2{
 @media screen and (min-width: 470px){
     .header{
         height: 60vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .nav-brand{
+        display: none;
+    }
+    button{
+        padding: 1rem 2rem;
     }
 }
 

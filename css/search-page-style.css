@@ -1,0 +1,196 @@
+/*GLOBAL STYLES*/
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Nutino', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.6rem;
+    color: #fafafa;
+}
+
+p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+button{
+    font-size: 1rem;
+    outline: 0;
+    border: .1rem solid #fafafa;
+    background: none;
+    padding: 1rem 2.5rem;
+    color: #fafafa;
+    cursor: pointer;
+    transition: background .6s;
+}
+
+button:hover{
+    background: linear-gradient(135deg , rgb(0, 107, 179) 0% ,rgb(162, 0, 255) 100%);
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    cursor: context-menu;
+    color: #fafafa;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.fix-gap{
+    margin: 1rem auto;
+}
+
+/*SIDE BAR PRODUCTS GROUP*/
+.side-bar-products-flex{
+    display: flex;
+    padding: 0 2.5rem;
+    width: 100%;
+    margin-bottom: 10.5rem;
+}
+
+/*Nav-bar Bottom Style*/
+.main-nav-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-nav-bottom li{
+    margin: 0 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Left Side Navbar*/
+.left-side-nav-group{
+    width: 25rem;
+    margin: 2.5rem;
+    position: relative;
+    top: 10.5rem;
+    font-size: 2rem;
+}
+
+.filter-options-main h1{
+    font-size: 2rem;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.filter-options-sub{
+    font-size: 1.2rem;
+}
+
+.mobile-filter{
+    display: none;
+}
+
+/*Special Offers*/
+.special-offers{
+    width: 100%;
+    position: relative;
+    top: 10.5rem;
+    font-size: 2rem;
+}
+
+.row{
+    margin-top: 2rem;
+}
+
+.show-more{
+    margin: 2rem auto;
+    display: block;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 550px){
+    .left-side-nav-group{
+       display: none;
+    }
+    .mobile-filter{
+        display: block;
+        position: absolute;
+        top: .1rem;
+        right: .1rem;
+        z-index: 1;
+        background: #000;
+    }
+    .mobile-filter span{
+        border: .1rem solid #fafafa;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .filter-options{
+        border: .1rem solid #fafafa;
+        padding: 1rem;
+    }
+    .left-side-nav-group span{
+        color: #fff;
+    }
+    .left-side-nav-group h1{
+        color: #fff;
+    }
+    .free-delivery{
+        color: #fafafa;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .side-bar-products-flex{
+        padding: 0 3.5rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .side-bar-products-flex{
+        padding: 0 1.5rem;
+    }
+    button{
+        padding: .5rem 1rem;
+    }
+}
