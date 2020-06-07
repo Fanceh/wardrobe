@@ -85,7 +85,7 @@ h2{
 }
 
 .header .header-top-gap{
-    padding: 12rem 0;
+    padding: 10rem 0;
 }
 
 .container{
@@ -121,25 +121,25 @@ h2{
 
 .nav-brand{
     display: block;
-    width: 4rem;
+    width: 3.5rem;
     filter: invert(1);
 }
 
 .nav-search-text-box{
     margin: 0 1rem;
-    width: 100%;
+    width: 150%;
     background: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     border: transparent;
     border-radius: 1rem;
     padding: 1rem;
     transform: translateY(-.2rem);
-    z-index: 3000;
 }
 
 .search-box{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .nav-search-text-box:focus{
@@ -157,7 +157,7 @@ h2{
 
 .cart-icon{
     color: #fafafa;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .categories{
@@ -205,7 +205,7 @@ h2{
 }
 
 .menu-icon i{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #fafafa;
     cursor: pointer;
 }
@@ -220,11 +220,11 @@ h2{
 .nav-list{
     width: 25rem;
     height: 100vh;
-    background: linear-gradient(90deg , rgb(0, 107, 179) 0% ,rgb(162, 0, 255) 100%);
+    background:  #1d1d1d;
     box-shadow: 0 0 2rem rgba(0, 0, 0,1);
     position: fixed;
     top: 0;
-    right: -26rem;
+    left: -26rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,12 +234,13 @@ h2{
 }
 
 .nav-list.active{
-    right: 0;
+    left: 0;
 }
 
 .nav-items{
     padding: .5rem 2.5rem;
     width: 100%;
+    border-bottom: .1rem solid #fafafa;
 }
 
 .nav-link{
@@ -569,11 +570,11 @@ h2{
 }
 
 @media screen and (max-width: 700px){
-    .nav-brand{
-        display: none;
-    }
     button{
         padding: 1rem 2rem;
+    }
+    .nav-categories-icon{
+        display: none;
     }
 }
 
