@@ -1,0 +1,276 @@
+/*GLOBAL STYLES*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Nutino', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.6rem;
+    color: #fafafa;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+button {
+    font-size: 1rem;
+    outline: 0;
+    border: .1rem solid #fafafa;
+    background: none;
+    padding: 1rem 2rem;
+    color: #fafafa;
+    cursor: pointer;
+    transition: background .6s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, rgb(0, 107, 179) 0%, rgb(162, 0, 255) 100%);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    cursor: context-menu;
+    color: #fafafa;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.fix-gap {
+    margin: 1rem auto;
+}
+
+
+/*Product-display*/
+
+.product-display {
+    position: relative;
+    top: 12rem;
+    padding: 1rem;
+    background: #000;
+    display: flex;
+    margin-bottom: 12rem;
+}
+
+.flex-product-display {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 3rem;
+}
+
+.main-display img {
+    border: .1rem solid #fafafa;
+    padding: 1rem;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.side-display {
+    margin-left: 1.5rem;
+}
+
+.side-display img {
+    border: .1rem solid #fafafa;
+    padding: .5rem;
+    cursor: pointer;
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.flex-product-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fafafa;
+    padding: 3rem;
+}
+
+.flex-product-desc>* {
+    margin-bottom: 2rem;
+}
+
+.flex-product-desc h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.flex-product-desc b {
+    width: 88%;
+    height: .1rem;
+    background: #fafafa;
+}
+
+.pricing {
+    font-size: 2rem;
+}
+
+.desc-list li {
+    width: 80%;
+    margin-bottom: .5rem;
+    line-height: 3.5rem;
+    list-style: square;
+}
+
+.flex-product-desc span {
+    font-size: 1.4rem;
+}
+
+.flex-product-desc select {
+    font-size: 1.4rem;
+    width: 40%;
+    border-radius: 100px;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    border-radius: 100px;
+}
+
+.flex-product-desc button {
+    width: 30%;
+}
+
+.share {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.share i {
+    font-size: 2.2rem;
+    margin: 0 1rem;
+}
+
+
+/*Additional Desc*/
+
+.additional-desc {
+    background: #000;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.desc-main,
+.main-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem;
+    border-top: .1rem solid rgb(128, 128, 128);
+}
+
+.additional-desc span i {
+    font-size: 3rem;
+    color: #fafafa;
+    margin-right: 2rem;
+}
+
+.desc-main-actual {
+    padding: 1rem;
+}
+
+.desc-main-actual li {
+    margin-bottom: 1rem;
+    list-style: square;
+}
+
+.main-reviews-actual {
+    padding: 1rem;
+}
+
+textarea {
+    border-radius: 1rem;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.related-products h1 {
+    margin-left: 2rem;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 850px) {
+    .product-display {
+        flex-direction: column;
+    }
+    .flex-product-display {
+        flex-direction: column;
+        padding: 0;
+    }
+    .side-display {
+        display: flex;
+        margin: 1rem auto;
+    }
+    .flex-product-desc {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .desc-list li {
+        width: 100%;
+        list-style: square;
+    }
+    .flex-product-desc select {
+        width: 60%;
+    }
+    .flex-product-desc button {
+        width: 100%;
+    }
+}
