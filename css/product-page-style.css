@@ -1,5 +1,4 @@
 /*GLOBAL STYLES*/
-
 *,
 *::before,
 *::after {
@@ -84,9 +83,7 @@ h2 {
     margin: 1rem auto;
 }
 
-
 /*Product-display*/
-
 .product-display {
     position: relative;
     top: 12rem;
@@ -190,9 +187,7 @@ option {
     margin: 0 1rem;
 }
 
-
 /*Additional Desc*/
-
 .additional-desc {
     background: #000;
     margin-bottom: 3rem;
@@ -248,9 +243,7 @@ textarea {
     margin-left: 2rem;
 }
 
-
 /*Media Queries*/
-
 @media screen and (max-width: 850px) {
     .product-display {
         flex-direction: column;
